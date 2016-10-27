@@ -48,3 +48,9 @@ Here are screenshots of what the master and detail views should look like:
 
 - [Activities and Intents](http://developer.android.com/guide/components/intents-filters.html)
 - [SQLite Database Documentation](http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html)
+
+---
+
+## Licensing
+1. All content is licensed under a CC­BY­NC­SA 4.0 license.
+2. All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact [legal@ga.co](mailto:legal@ga.co).
