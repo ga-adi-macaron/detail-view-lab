@@ -103,4 +103,29 @@ public class ShoppingSQLiteOpenHelper extends SQLiteOpenHelper{
 
         return shoppingItems;
     }
+
+    public ShoppingItem getShoppingItemById(int id){
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.query(SHOPPING_LIST_TABLE_NAME, // a. table
+                SHOPPING_COLUMNS, // b. column names
+                COL_ID + " = ?", // c. selections
+                new String[]{String.valueOf(id)}, // d. selections args
+                null, // e. group by
+                null, // f. having
+                null, // g. order by
+                null); // h. limit
+
+
+        if(cursor.moveToFirst()){
+            String name = cursor.getString(cursor.getColumnIndex(COL_ITEM_NAME));
+            String description = cursor.getString(cursor.getColumnIndex(COL_ITEM_DESCRIPTION));
+            String price = cursor.getString(cursor.getColumnIndex(COL_ITEM_PRICE));
+            String type = cursor.getString(cursor.getColumnIndex(COL_ITEM_TYPE));
+            return new ShoppingItem(id,name,description,price,type);
+        }
+
+        return null;
+    }
 }
