@@ -1,8 +1,11 @@
 package ly.generalassemb.drewmahrt.shoppinglistdetailview;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -23,8 +26,19 @@ public class ShoppingListAdapter extends RecyclerView.Adapter<ShoppingItemViewHo
     }
 
     @Override
-    public void onBindViewHolder(ShoppingItemViewHolder holder, int position) {
+    public void onBindViewHolder(final ShoppingItemViewHolder holder, int position) {
         holder.mNameTextView.setText(mShoppingItems.get(position).getName());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ShoppingItem shoppingItem = mShoppingItems.get(holder.getAdapterPosition());
+
+                Intent myIntent = new Intent(view.getContext(), DisplayActivity.class);
+                myIntent.putExtra(DisplayActivity.ITEM_ID_KEY, shoppingItem.getId());
+                view.getContext().startActivity(myIntent);
+            }
+        });
+
     }
 
     @Override
