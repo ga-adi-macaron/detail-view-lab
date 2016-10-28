@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 public class DetailActivity extends AppCompatActivity {
     public static final String ID_KEY = "id";
-    TextView mNameText,mDescriptionText,mTypeText,mPriceText;
+    TextView mNameText,mDescriptionText,mTypeText,mPriceText,mIsleText;
 
 
     @Override
@@ -27,10 +27,12 @@ public class DetailActivity extends AppCompatActivity {
         mDescriptionText= (TextView) findViewById(R.id.description_text);
         mTypeText= (TextView) findViewById(R.id.type_text);
         mPriceText= (TextView) findViewById(R.id.price_text);
+        mIsleText = (TextView) findViewById(R.id.isle_text);
 
         mNameText.setText(shoppingItem.getName());
         mDescriptionText.setText(shoppingItem.getDescription());
         mTypeText.setText(shoppingItem.getType());
         mPriceText.setText("$"+shoppingItem.getPrice());
+        mIsleText.setText(shoppingItem.getIsle());
     }
 }

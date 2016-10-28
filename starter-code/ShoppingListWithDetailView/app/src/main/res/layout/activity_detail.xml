@@ -30,4 +30,9 @@
     android:layout_height="wrap_content"
     android:id="@+id/price_text"
     android:textSize="12sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/isle_text"
+        android:textSize="18sp"/>
 </LinearLayout>
