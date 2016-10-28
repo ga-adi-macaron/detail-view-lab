@@ -1,0 +1,7 @@
+#Thu Oct 27 21:19:32 EDT 2016
+base.0=/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2c7914aa31876778afbc5e727ebca3a061e73c6d
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_255b38f2747af4089d40f50f74a9ee46be0d240b/classes.dex
+base.1=/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_255b38f2747af4089d40f50f74a9ee46be0d240b
+file.0=/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2c7914aa31876778afbc5e727ebca3a061e73c6d/classes.dex

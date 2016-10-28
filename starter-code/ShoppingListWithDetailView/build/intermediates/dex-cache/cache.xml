@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.0_abc36c501b79c22fd708572443fedd8fb7801202/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.0_e8b5df8c917fe6b59cdd3e219fb2a35ce42d0be3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_8d51864b188b58f0e5028c4b3cb8c1dade5acf36/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_f228c504abd6b3dd42c07c67d55fe01a5d125ae5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_fc163509fe0b5e2a53d56086cc20c833099232b0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_1debdaa19efa9bdd707affc08996045180612a10/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_a3c9b5890545857710473ef25e5afcd2cfc0a987/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_37a1ca4df16c86ec00236341bead5e55d72a68e2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_eb0ba64b9b0e2491f5d4284faf5e1b3bf550d59d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_f5523cd2e5cbdc744b44c2fd950215c1b58846af/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4d9b9738bb9f8391db6d5b62db75b67915ec517e">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_255b38f2747af4089d40f50f74a9ee46be0d240b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_d0243d8bb6ac2359434db213c30e2e8292bd1dc8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_3631edee0ed9cfba16a22f3c467eae0bab3afaaa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_013217e1a7091695a4e0a6c5da78cb23922a6ea5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_f2402ab006b8d94d48eb7eab7b8addf7e9095e49/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.0_a80b862ae56514b686d47c1219acba6f15c95ae4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7b9f96472abd3cd8a26775ccb7ac462e8b40a7d6">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2c7914aa31876778afbc5e727ebca3a061e73c6d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.0_8ec40674032c6be3c30a5178b1e6b992f1475163/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonlieblich/.gradle/caches/modules-2/files-2.1/com.readystatesoftware.sqliteasset/sqliteassethelper/2.0.1/d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f/sqliteassethelper-2.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f">
+        <dex dex="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/10/sqliteassethelper-2.0.1_b22c7233df56d4ee0e7b3011eca1be3217d6196d/classes.dex" />
+    </item>
+
+</items>

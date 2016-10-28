@@ -23,13 +23,12 @@ public class MainActivity extends AppCompatActivity {
         //Setup the RecyclerView
         RecyclerView shoppingListRecyclerView = (RecyclerView) findViewById(R.id.shopping_list_recyclerview);
 
-        ShoppingSQLiteOpenHelper db = ShoppingSQLiteOpenHelper.getInstance(this);
-        List<ShoppingItem> shoppingList = db.getShoppingList();
+        List<ShoppingItem> shoppingList = ShoppingSQLiteOpenHelper.getInstance(this).getShoppingList();
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
 
         shoppingListRecyclerView.setLayoutManager(linearLayoutManager);
-        shoppingListRecyclerView.setAdapter(new ShoppingListAdapter(shoppingList));
-
+        RecyclerView.Adapter adapter = new ShoppingListAdapter(shoppingList);
+        shoppingListRecyclerView.setAdapter(adapter);
     }
 }

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxxhdpi"
+    format="8"
+    plugin-version="2.2.2"
+    timestamp="102151197530131"
+    token="1985908230340257413"
+    verifier="COMPATIBLE" >
+
+    <task
+        name="javac"
+        duration="409" />
+    <task
+        name="instant-run-dex"
+        duration="1143" />
+    <task
+        name="instant-run-transform"
+        duration="175" />
+    <task
+        name="verifier"
+        duration="38" />
+
+    <artifact
+        location="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
+
+    <build
+        timestamp="100729138811885"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="102093695165308"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="102151197530131"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/jonlieblich/work/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+
+</instant-run>

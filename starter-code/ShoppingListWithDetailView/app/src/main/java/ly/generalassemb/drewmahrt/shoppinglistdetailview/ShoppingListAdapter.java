@@ -1,7 +1,9 @@
 package ly.generalassemb.drewmahrt.shoppinglistdetailview;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.List;
@@ -11,7 +13,7 @@ import java.util.List;
  */
 
 public class ShoppingListAdapter extends RecyclerView.Adapter<ShoppingItemViewHolder> {
-    List<ShoppingItem> mShoppingItems;
+    private List<ShoppingItem> mShoppingItems;
 
     public ShoppingListAdapter(List<ShoppingItem> shoppingItems) {
         mShoppingItems = shoppingItems;
@@ -19,12 +21,25 @@ public class ShoppingListAdapter extends RecyclerView.Adapter<ShoppingItemViewHo
 
     @Override
     public ShoppingItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new ShoppingItemViewHolder(LayoutInflater.from(parent.getContext()).inflate(android.R.layout.simple_list_item_1,parent,false));
+        View view = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.shopping_list_item, parent, false);
+        return new ShoppingItemViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(ShoppingItemViewHolder holder, int position) {
-        holder.mNameTextView.setText(mShoppingItems.get(position).getName());
+    public void onBindViewHolder(final ShoppingItemViewHolder holder, int position) {
+        final ShoppingItem currentItem = mShoppingItems.get(holder.getAdapterPosition());
+
+        holder.mNameTextView.setText(currentItem.getName());
+
+        holder.mShoppingListView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), ShoppingItemDetailActivity.class);
+                intent.putExtra(ShoppingItemDetailActivity.ITEM_ID, currentItem.getId()-1);
+                holder.mShoppingListView.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override
