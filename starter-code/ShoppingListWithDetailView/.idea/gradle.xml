@@ -7,11 +7,16 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$USER_HOME$/Dropbox/Charlie/GA/ADI-Macaron/adi-nyc/curriculum/04-schedule-and-supplies/week-04/baseline-materials/detailed-view-lab/starter-code/ShoppingListWithDetailView" />
-            <option value="$USER_HOME$/Dropbox/Charlie/GA/ADI-Macaron/adi-nyc/curriculum/04-schedule-and-supplies/week-04/baseline-materials/detailed-view-lab/starter-code/ShoppingListWithDetailView/app" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
-        <option name="resolveModulePerSourceSet" value="false" />
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>
