@@ -31,5 +31,7 @@ public class MainActivity extends AppCompatActivity {
         shoppingListRecyclerView.setLayoutManager(linearLayoutManager);
         shoppingListRecyclerView.setAdapter(new ShoppingListAdapter(shoppingList));
 
+
+
     }
 }
