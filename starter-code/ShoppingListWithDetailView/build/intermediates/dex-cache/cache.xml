@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_8b1ee58445bf5615bf30d0b01a00a00cddedc09d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.0_7fe71d02056e1ed27f98fc3887aad6818ca88871.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.0_b1321a31b43f55a2ec34df0c6b52531980fae702.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_2bfae5d72963e41331cddf3a45d0ca6a0ff2d414.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.0_256fe2a1dbf0d175a19a8bbceae7a7f5440cca80.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.0_19a5763083d38e83037efff2a93c122db22f1517.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.0_fe973f7d7ff4fae918bacd1fcf90640c0af00dc8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.0_6a0eafc6eaa310321293e4ebdda5718f14821629.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.0_6fe2ac4dfc961f9402d6f0d17c8bfd47e0353736.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/.gradle/caches/modules-2/files-2.1/com.readystatesoftware.sqliteasset/sqliteassethelper/2.0.1/d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f/sqliteassethelper-2.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f">
+        <dex dex="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/pre-dexed/debug/sqliteassethelper-2.0.1_117193aa862ab3b313789beaf59ee88b9fc62143.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.0_b8e08b78674a25752814f1e33cc77e34356d928f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_1e3e955e03f7ed58f4acc9e9dc641ed3564a09c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.0_810ccfbaf79645218af4f93c47eeeea96d9e7718.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.0_5d82419d7eca5fa19a2f90a08a67e9d08b2d494d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.0_7e9f1ec6cf718f5c3d849a1c4d0e13b1caf6ecb8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_f6d9c71eb5525a084fa4264299cfa4f76b4625f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/Users/student/ADI_Macaron/Labs/detail-view-lab/starter-code/ShoppingListWithDetailView/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_7d9a1e38595dd2f64429afa6e00d767560e37ec8.jar" />
+    </item>
+
+</items>
