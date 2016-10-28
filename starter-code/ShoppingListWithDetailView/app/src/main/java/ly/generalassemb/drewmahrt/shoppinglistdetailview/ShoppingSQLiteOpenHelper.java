@@ -24,8 +24,10 @@ public class ShoppingSQLiteOpenHelper extends SQLiteOpenHelper{
     public static final String COL_ITEM_PRICE = "PRICE";
     public static final String COL_ITEM_DESCRIPTION = "DESCRIPTION";
     public static final String COL_ITEM_TYPE = "TYPE";
+    public static final String COL_ITEM_MADEIN = "MADEIN";
 
-    public static final String[] SHOPPING_COLUMNS = {COL_ID,COL_ITEM_NAME,COL_ITEM_DESCRIPTION,COL_ITEM_PRICE,COL_ITEM_TYPE};
+    public static final String[] SHOPPING_COLUMNS = {COL_ID,COL_ITEM_NAME,COL_ITEM_DESCRIPTION,
+            COL_ITEM_PRICE,COL_ITEM_TYPE,COL_ITEM_MADEIN};
 
     private static final String CREATE_SHOPPING_LIST_TABLE =
             "CREATE TABLE " + SHOPPING_LIST_TABLE_NAME +
@@ -34,7 +36,8 @@ public class ShoppingSQLiteOpenHelper extends SQLiteOpenHelper{
                     COL_ITEM_NAME + " TEXT, " +
                     COL_ITEM_DESCRIPTION + " TEXT, " +
                     COL_ITEM_PRICE + " TEXT, " +
-                    COL_ITEM_TYPE + " TEXT )";
+                    COL_ITEM_TYPE + " TEXT, " +
+                    COL_ITEM_MADEIN + " TEXT )";
 
     private static ShoppingSQLiteOpenHelper sInstance;
 
@@ -61,12 +64,13 @@ public class ShoppingSQLiteOpenHelper extends SQLiteOpenHelper{
     }
 
     //Add new itinerary list
-    public long addItem(String name, String description, String price, String type){
+    public long addItem(String name, String description, String price, String type, String madeIn){
         ContentValues values = new ContentValues();
         values.put(COL_ITEM_NAME, name);
         values.put(COL_ITEM_DESCRIPTION, description);
         values.put(COL_ITEM_PRICE, price);
         values.put(COL_ITEM_TYPE, type);
+        values.put(COL_ITEM_MADEIN, madeIn);
 
         SQLiteDatabase db = this.getWritableDatabase();
         long returnId = db.insert(SHOPPING_LIST_TABLE_NAME, null, values);
@@ -96,7 +100,8 @@ public class ShoppingSQLiteOpenHelper extends SQLiteOpenHelper{
                         cursor.getString(cursor.getColumnIndex(COL_ITEM_NAME)),
                         cursor.getString(cursor.getColumnIndex(COL_ITEM_DESCRIPTION)),
                         cursor.getString(cursor.getColumnIndex(COL_ITEM_PRICE)),
-                        cursor.getString(cursor.getColumnIndex(COL_ITEM_TYPE))));
+                        cursor.getString(cursor.getColumnIndex(COL_ITEM_TYPE)),
+                        cursor.getString(cursor.getColumnIndex(COL_ITEM_MADEIN))));
                 cursor.moveToNext();
             }
         }
@@ -122,9 +127,10 @@ public class ShoppingSQLiteOpenHelper extends SQLiteOpenHelper{
             String itemDescription = cursor.getString(cursor.getColumnIndex(COL_ITEM_DESCRIPTION));
             String itemPrice = cursor.getString(cursor.getColumnIndex(COL_ITEM_PRICE));
             String itemType = cursor.getString(cursor.getColumnIndex(COL_ITEM_TYPE));
+            String itemMadeIn = cursor.getString(cursor.getColumnIndex(COL_ITEM_MADEIN));
 
             ShoppingItem shoppingItem = new ShoppingItem(id, itemName,
-                    itemDescription, itemPrice, itemType);
+                    itemDescription, itemPrice, itemType, itemMadeIn);
             cursor.close();
             return shoppingItem;
         } else {

@@ -29,10 +29,12 @@ public class DetailActivity extends AppCompatActivity {
         TextView mDesc = (TextView) findViewById(R.id.description);
         TextView mPrice = (TextView) findViewById(R.id.price);
         TextView mType = (TextView) findViewById(R.id.type);
+        TextView mMadeIn = (TextView) findViewById(R.id.madein);
 
         mName.setText(shoppingItem.getName());
         mDesc.setText(shoppingItem.getDescription());
         mPrice.setText(shoppingItem.getPrice());
         mType.setText(shoppingItem.getType());
+        mMadeIn.setText(shoppingItem.getMadeIn());
     }
 }

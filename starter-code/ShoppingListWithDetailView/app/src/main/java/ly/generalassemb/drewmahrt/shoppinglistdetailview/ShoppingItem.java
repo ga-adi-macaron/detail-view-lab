@@ -6,14 +6,15 @@ package ly.generalassemb.drewmahrt.shoppinglistdetailview;
 
 public class ShoppingItem {
     private int mId;
-    private String mName, mDescription, mPrice, mType;
+    private String mName, mDescription, mPrice, mType, mMadeIn;
 
-    public ShoppingItem(int id, String name, String description, String price, String type) {
+    public ShoppingItem(int id, String name, String description, String price, String type, String madeIn) {
         mId = id;
         mName = name;
         mDescription = description;
         mPrice = price;
         mType = type;
+        mMadeIn = madeIn;
     }
 
     public int getId() {
@@ -34,5 +35,9 @@ public class ShoppingItem {
 
     public String getType() {
         return mType;
+    }
+
+    public String getMadeIn() {
+        return mMadeIn;
     }
 }
