@@ -28,6 +28,7 @@ public class ShoppingSQLiteOpenHelper extends SQLiteOpenHelper{
     public static final String[] SHOPPING_COLUMNS = {COL_ID,COL_ITEM_NAME,COL_ITEM_DESCRIPTION,COL_ITEM_PRICE,COL_ITEM_TYPE};
 
     private static final String CREATE_SHOPPING_LIST_TABLE =
+
             "CREATE TABLE " + SHOPPING_LIST_TABLE_NAME +
                     "(" +
                     COL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
@@ -39,6 +40,7 @@ public class ShoppingSQLiteOpenHelper extends SQLiteOpenHelper{
     private static ShoppingSQLiteOpenHelper sInstance;
 
     public static ShoppingSQLiteOpenHelper getInstance(Context context) {
+
         if (sInstance == null) {
             sInstance = new ShoppingSQLiteOpenHelper(context.getApplicationContext());
         }
@@ -74,11 +76,13 @@ public class ShoppingSQLiteOpenHelper extends SQLiteOpenHelper{
         return returnId;
     }
 
-    public List<ShoppingItem> getShoppingList(){
+    public List<ShoppingItem> getShoppingList() {
 
         SQLiteDatabase db = this.getReadableDatabase();
 
-        Cursor cursor = db.query(SHOPPING_LIST_TABLE_NAME, // a. table
+        Cursor cursor = db.query(
+
+                            SHOPPING_LIST_TABLE_NAME, // a. table
                             SHOPPING_COLUMNS, // b. column names
                             null, // c. selections
                             null, // d. selections args
@@ -89,8 +93,8 @@ public class ShoppingSQLiteOpenHelper extends SQLiteOpenHelper{
 
         List<ShoppingItem> shoppingItems = new ArrayList<>();
 
-        if(cursor.moveToFirst()){
-            while(!cursor.isAfterLast()){
+        if(cursor.moveToFirst()) {
+            while(!cursor.isAfterLast()) {
                 shoppingItems.add(new ShoppingItem(
                         cursor.getInt(cursor.getColumnIndex(COL_ID)),
                         cursor.getString(cursor.getColumnIndex(COL_ITEM_NAME)),
@@ -103,4 +107,34 @@ public class ShoppingSQLiteOpenHelper extends SQLiteOpenHelper{
 
         return shoppingItems;
     }
+
+    public ShoppingItem getItemId(int id) {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.query(
+
+                SHOPPING_LIST_TABLE_NAME, // a. table
+                SHOPPING_COLUMNS, // b. column names
+                COL_ID + " = ?", // c. selections
+                new String[] {String.valueOf(id)}, // d. selections args
+                null, // e. group by
+                null, // f. having
+                null, // g. order by
+                null); // h. limit
+
+        if(cursor.moveToFirst()) {
+
+            String text1 = cursor.getString(cursor.getColumnIndex(COL_ITEM_NAME));
+            String text2 = cursor.getString(cursor.getColumnIndex(COL_ITEM_DESCRIPTION));
+            String text3 = cursor.getString(cursor.getColumnIndex(COL_ITEM_PRICE));
+            String text4 = cursor.getString(cursor.getColumnIndex(COL_ITEM_TYPE));
+
+            ShoppingItem item = new ShoppingItem(id,text1,text2,text3,text4);
+            cursor.close();
+            return item;
+            }
+            return null;
+    }
+
 }
