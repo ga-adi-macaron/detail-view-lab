@@ -1,7 +1,9 @@
 package ly.generalassemb.drewmahrt.shoppinglistdetailview;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.List;
@@ -19,12 +21,28 @@ public class ShoppingListAdapter extends RecyclerView.Adapter<ShoppingItemViewHo
 
     @Override
     public ShoppingItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new ShoppingItemViewHolder(LayoutInflater.from(parent.getContext()).inflate(android.R.layout.simple_list_item_1,parent,false));
+        return new ShoppingItemViewHolder(LayoutInflater.from(parent.getContext())
+                .inflate(android.R.layout.simple_list_item_1,parent,false));
     }
 
     @Override
-    public void onBindViewHolder(ShoppingItemViewHolder holder, int position) {
+    public void onBindViewHolder(final ShoppingItemViewHolder holder, int position) {
+
+        final int id = mShoppingItems.get(position).getId();
+        String name = mShoppingItems.get(position).getName();
+
         holder.mNameTextView.setText(mShoppingItems.get(position).getName());
+
+        holder.mNameTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), DetailActivity.class);
+
+                intent.putExtra(DetailActivity.ITEM_ID,mShoppingItems.get(holder.getAdapterPosition()).getId());
+
+                view.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override
