@@ -24,17 +24,18 @@ public class ShoppingSQLiteOpenHelper extends SQLiteOpenHelper{
     public static final String COL_ITEM_PRICE = "PRICE";
     public static final String COL_ITEM_DESCRIPTION = "DESCRIPTION";
     public static final String COL_ITEM_TYPE = "TYPE";
+    public static final String COL_ITEM_ISLE = "ISLE";
 
-    public static final String[] SHOPPING_COLUMNS = {COL_ID,COL_ITEM_NAME,COL_ITEM_DESCRIPTION,COL_ITEM_PRICE,COL_ITEM_TYPE};
+    public static final String[] SHOPPING_COLUMNS = {COL_ID,COL_ITEM_NAME,COL_ITEM_DESCRIPTION,COL_ITEM_PRICE,COL_ITEM_TYPE,COL_ITEM_ISLE};
 
     private static final String CREATE_SHOPPING_LIST_TABLE =
-            "CREATE TABLE " + SHOPPING_LIST_TABLE_NAME +
-                    "(" +
+            "CREATE TABLE " + SHOPPING_LIST_TABLE_NAME + "(" +
                     COL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                     COL_ITEM_NAME + " TEXT, " +
                     COL_ITEM_DESCRIPTION + " TEXT, " +
                     COL_ITEM_PRICE + " TEXT, " +
-                    COL_ITEM_TYPE + " TEXT )";
+                    COL_ITEM_TYPE + " TEXT, " +
+                    COL_ITEM_ISLE+ " TEXT )";
 
     private static ShoppingSQLiteOpenHelper sInstance;
 
@@ -61,12 +62,13 @@ public class ShoppingSQLiteOpenHelper extends SQLiteOpenHelper{
     }
 
     //Add new itinerary list
-    public long addItem(String name, String description, String price, String type){
+    public long addItem(String name, String description, String price, String type, String isle){
         ContentValues values = new ContentValues();
         values.put(COL_ITEM_NAME, name);
         values.put(COL_ITEM_DESCRIPTION, description);
         values.put(COL_ITEM_PRICE, price);
         values.put(COL_ITEM_TYPE, type);
+        values.put(COL_ITEM_ISLE,isle);
 
         SQLiteDatabase db = this.getWritableDatabase();
         long returnId = db.insert(SHOPPING_LIST_TABLE_NAME, null, values);
@@ -96,11 +98,41 @@ public class ShoppingSQLiteOpenHelper extends SQLiteOpenHelper{
                         cursor.getString(cursor.getColumnIndex(COL_ITEM_NAME)),
                         cursor.getString(cursor.getColumnIndex(COL_ITEM_DESCRIPTION)),
                         cursor.getString(cursor.getColumnIndex(COL_ITEM_PRICE)),
-                        cursor.getString(cursor.getColumnIndex(COL_ITEM_TYPE))));
+                        cursor.getString(cursor.getColumnIndex(COL_ITEM_TYPE)),
+                        cursor.getString(cursor.getColumnIndex(COL_ITEM_ISLE))
+                ));
                 cursor.moveToNext();
             }
         }
-
+        cursor.close();
         return shoppingItems;
+    }
+
+    public ShoppingItem getShoppingItemByID(int id){
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.query(SHOPPING_LIST_TABLE_NAME, // a. table
+                SHOPPING_COLUMNS, // b. column names
+                COL_ID+" = ?", // c. selections
+                new String[]{String.valueOf(id)}, // d. selections args
+                null, // e. group by
+                null, // f. having
+                null, // g. order by
+                null); // h. limit
+
+        if(cursor.moveToFirst()){
+            ShoppingItem shoppingItem = new ShoppingItem(
+                    id,
+                    cursor.getString(cursor.getColumnIndex(COL_ITEM_NAME)),
+                    cursor.getString(cursor.getColumnIndex(COL_ITEM_DESCRIPTION)),
+                    cursor.getString(cursor.getColumnIndex(COL_ITEM_PRICE)),
+                    cursor.getString(cursor.getColumnIndex(COL_ITEM_TYPE)),
+                    cursor.getString(cursor.getColumnIndex(COL_ITEM_ISLE))
+            );
+            cursor.close();
+            return shoppingItem;
+        }
+        cursor.close();
+        return null;
     }
 }
