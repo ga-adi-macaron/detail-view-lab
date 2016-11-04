@@ -74,6 +74,7 @@ public class ShoppingSQLiteOpenHelper extends SQLiteOpenHelper{
         return returnId;
     }
 
+    //Return full list of items in table
     public List<ShoppingItem> getShoppingList(){
 
         SQLiteDatabase db = this.getReadableDatabase();
