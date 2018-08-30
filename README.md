@@ -33,7 +33,7 @@ In this lab, we will be continuing our work on the Grocery List: when the user c
 
 #### Starter code
 
-The [starter code](starter-code) contains the the solution code to the Databases w/ RecyclerViews lab with a few small updates (the SQLiteOpenHelper was turned into a singleton, and the ShoppingItem class has a field for ID). If your code from that lab was working properly, you may continue using that codebase instead, if you prefer.
+The [starter code](starter-code) contains the solution code to the Databases w/ RecyclerViews lab with a few small updates (the SQLiteOpenHelper was turned into a singleton, and the ShoppingItem class has a field for ID). If your code from that lab was working properly, you may continue using that codebase instead, if you prefer.
 
 #### Deliverable
 
